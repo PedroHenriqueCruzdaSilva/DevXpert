@@ -5,8 +5,9 @@ import {
   Title,
   Description,
   CodeTag,
-} from '../components/sharedstyles'
-import Cards from '../components/cards'
+} from '../src/theme/components'
+import Cards from '../src/components/cards'
+import Menu from '../src/components/Menu'
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
+        <Menu />
         <Title>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://www.insararas.com.br">INSAraras!</a>
         </Title>
 
         <Description>
