@@ -1,3 +1,4 @@
+import Image from "next/image";
 import * as C from "../../theme/components";
 
 const Menu = () => {
@@ -5,18 +6,21 @@ const Menu = () => {
     <C.MenuDiv>
       <C.NavMenu>
         <C.LinksDiv>
-          <C.NextLinkText href="/">HomePage</C.NextLinkText>
+          <C.NextLinkText href="/">
+            <Image 
+            src="/favicon.ico" 
+            alt="Logo do DevXpert" 
+            width={60} 
+            height={40} />
+          </C.NextLinkText>
+          <C.NextLinkText href="/">Home</C.NextLinkText>
           <C.NextLinkText href="/">Sobre</C.NextLinkText>
-          <C.NextLinkText href="/">Cursos</C.NextLinkText>
-          <C.NextLinkText href="/">Pastoral</C.NextLinkText>
-          <C.NextLinkText href="/">Aluno</C.NextLinkText>
-          <C.NextLinkText href="/">Portais</C.NextLinkText>
           <C.NextLinkText href="/">Contato</C.NextLinkText>
         </C.LinksDiv>
         <C.ButtonsDiv>
           <C.NextLinkText href="/">🔍</C.NextLinkText>
-          <C.NextLinkNButton href="/">Área Restrita</C.NextLinkNButton>
-          <C.NextLinkNButton href="/">Acessar o SAF</C.NextLinkNButton>
+          <C.NextLinkNButton href="/">Login</C.NextLinkNButton>
+          <C.NextLinkNButton href="/">Registrar</C.NextLinkNButton>
         </C.ButtonsDiv>
       </C.NavMenu>
     </C.MenuDiv>

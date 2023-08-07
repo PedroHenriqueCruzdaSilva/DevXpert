@@ -7,6 +7,9 @@ export const MenuDiv = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
+  @media (max-width: 930px) {
+    display: none;
+  }
 `;
 
 export const NavMenu = styled.nav`
@@ -16,9 +19,6 @@ export const NavMenu = styled.nav`
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 930px) {
-    display: none;
-  }
 `;
 
 export const LinksDiv = styled.div`
