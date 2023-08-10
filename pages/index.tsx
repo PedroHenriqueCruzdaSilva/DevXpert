@@ -7,7 +7,6 @@ import {
   CodeTag,
 } from '../src/theme/components'
 import Cards from '../src/components/cards'
-import Menu from '../src/components/Menu'
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
-        <Menu />
         <Title>
           Welcome to <a href="https://www.insararas.com.br">INSAraras!</a>
         </Title>
