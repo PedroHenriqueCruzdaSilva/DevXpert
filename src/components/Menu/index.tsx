@@ -14,11 +14,9 @@ const Menu = () => {
             height={40} />
           </C.NextLinkText>
           <C.NextLinkText href="/">Home</C.NextLinkText>
-          <C.NextLinkText href="/">Sobre</C.NextLinkText>
-          <C.NextLinkText href="/">Contato</C.NextLinkText>
+          <C.NextLinkText href="/about">Sobre</C.NextLinkText>
         </C.LinksDiv>
         <C.ButtonsDiv>
-          <C.NextLinkText href="/">🔍</C.NextLinkText>
           <C.NextLinkNButton href="/">Login</C.NextLinkNButton>
           <C.NextLinkNButton href="/">Registrar</C.NextLinkNButton>
         </C.ButtonsDiv>

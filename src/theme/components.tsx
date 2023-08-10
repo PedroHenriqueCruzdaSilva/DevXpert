@@ -4,10 +4,8 @@ import Link from "next/link";
 export const MenuDiv = styled.div`
   padding: 15px;
   background-color: #fff;
-  position: fixed;
-  top: 0;
   width: 100%;
-  @media (max-width: 930px) {
+  @media (max-width: 590px) {
     display: none;
   }
 `;
@@ -23,6 +21,7 @@ export const NavMenu = styled.nav`
 
 export const LinksDiv = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const NextLinkText = styled(Link)`
@@ -53,55 +52,51 @@ export const NextLinkNButton = styled(Link)`
   }
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   padding: 0 0.5rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
-`
-const Main = styled.main`
-  padding: 5rem 0;
+`;
+export const Main = styled.main`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+`;
 
-const Title = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  text-decoration: none;
+export const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 60% 60%;
+  margin-top: 50%;
+`;
 
-  a {
-    color: ${({ theme }) => theme.colors.secondary};
-    text-decoration: none;
-    &:hover,
-    :focus,
-    :active {
-      text-decoration: underline;
-    }
-  }
-`
+export const CardWrapper = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 5px 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 300px;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+`;
 
-const Description = styled.p`
-  text-align: center;
-  line-height: 1.5;
+export const CardImage = styled.img`
+  width: 90%;
+  margin-top: 2%;
+`;
+
+export const CardTitle = styled.h2`
   font-size: 1.5rem;
-`
-const CodeTag = styled.code`
-  background: #fafafa;
-  border-radius: 5px;
-  margin: 0 0.75rem;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-`
+  margin-bottom: 8px;
+`;
 
-export { Container, Main, Title, Description, CodeTag }
+export const CardDescription = styled.p`
+  font-size: 1rem;
+`;
