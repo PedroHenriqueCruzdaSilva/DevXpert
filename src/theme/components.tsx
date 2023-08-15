@@ -53,7 +53,6 @@ export const NextLinkNButton = styled(Link)`
 `;
 
 export const Container = styled.div`
-export const Container = styled.div`
   padding: 0 0.5rem;
   display: flex;
   flex-flow: column nowrap;
