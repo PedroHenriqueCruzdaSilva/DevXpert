@@ -93,10 +93,28 @@ export const CardImage = styled.img`
 `;
 
 export const CardTitle = styled.h2`
-  font-size: 1.5rem;
-  margin-bottom: 8px;
+  font-size: 20px;
+  margin-bottom: 0px;
 `;
 
 export const CardDescription = styled.p`
   font-size: 1rem;
+`;
+
+export const ButtonAuth = styled.button`
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding-top: 3px;
+  width: 100px;
+  height: 30px;
+  background-color: #f0506e;
+  margin: 0 15px;
+  margin-top: 8.5px;
+  :hover {
+    color: #457627;
+  }
 `;
