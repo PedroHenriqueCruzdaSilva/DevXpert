@@ -1,7 +1,7 @@
 import Image from "next/image";
 import * as C from "../../theme/components";
 import { auth } from "../../db/sdkFirebase";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithRedirect, GoogleAuthProvider } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect } from "react";
 
@@ -24,7 +24,7 @@ const Menu = () => {
   }
 
   const login = async () => {
-    const result = await signInWithPopup(auth, googleAuth)
+    const result = await signInWithRedirect(auth, googleAuth)
     return result
   }
 
