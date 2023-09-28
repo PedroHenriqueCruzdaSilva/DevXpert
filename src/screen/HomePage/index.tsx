@@ -4,7 +4,7 @@ import Card from "../../components/Card";
 import Menu from "../../components/Menu";
 import { useEffect, useState } from "react";
 import { auth } from "../../db/sdkFirebase";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithRedirect, GoogleAuthProvider } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import H from "../../assets/H.png";
 import Image from "next/image";
@@ -39,7 +39,7 @@ export default function HomePage() {
   }
 
   const login = async () => {
-    const result = await signInWithPopup(auth, googleAuth)
+    const result = await signInWithRedirect(auth, googleAuth)
     return result
   }
 
