@@ -11,6 +11,7 @@ const Menu = () => {
   const googleAuth = new GoogleAuthProvider();
 
   const verifica = () => {
+    console.log("Teste")
     if(user) {
       sair()
     }
