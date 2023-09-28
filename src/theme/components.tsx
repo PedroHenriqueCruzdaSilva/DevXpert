@@ -118,3 +118,47 @@ export const ButtonAuth = styled.button`
     color: #457627;
   }
 `;
+
+export const DivSobre = styled.div`
+  margin-top: 12.5%;
+  text-align: center;
+  width: 60%;
+`;
+
+export const ButtonMobile = styled.div`
+  position: fixed;
+  top: 2%;
+  left: 4.5%;
+  width: 50px;
+  height: 25px;
+  border: none;
+  background-color: white;
+  @media (min-width: 590px) {
+    display: none;
+  }
+`;
+
+export const DivVisibleMobile = styled.div`
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 40px;
+`;
+
+export const SairDivVisibleMobile = styled.button`
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+`;
